@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#062A40">
+  <title>Water Guardian | Clean Water, Better Future</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Water Guardian home">
+        <span class="brand-icon">≈</span>
+        <span><strong>Water Guardian</strong><small>Every drop matters</small></span>
+      </a>
+      <button id="headerAction" class="avatar" aria-label="Open profile">WG</button>
+    </header>
+
+    <main id="app" class="main-content">
+      <section class="welcome-card">
+        <div>
+          <p class="eyebrow">CLEAN WATER • HEALTHY PLANET</p>
+          <h1>Small actions.<br><span>Big impact.</span></h1>
+          <p>Help protect our rivers, lakes and oceans. Report pollution, learn simple habits and inspire your community.</p>
+          <button class="btn btn-light" data-go="report">＋ Report pollution</button>
+        </div>
+        <div class="water-art" aria-hidden="true"><div class="sun"></div><div class="wave wave-one"></div><div class="wave wave-two"></div><div class="drop">滴</div></div>
+      </section>
+
+      <section class="stats-grid">
+        <article class="stat-card"><span class="stat-icon">✦</span><span class="stat-label">Eco-Points</span><strong id="points">120</strong><small id="rank">Water Warrior</small></article>
+        <article class="stat-card"><span class="stat-icon">◎</span><span class="stat-label">My reports</span><strong id="reportCount">0</strong><small>Every report counts</small></article>
+        <article class="stat-card"><span class="stat-icon">✓</span><span class="stat-label">Tips completed</span><strong id="tipCount">0</strong><small>Better habits daily</small></article>
+      </section>
+
+      <section class="section-heading"><div><p class="eyebrow">TAKE ACTION</p><h2>Make a difference</h2></div></section>
+      <section class="action-grid">
+        <button class="action-card" data-go="report"><span class="action-icon blue">⌖</span><strong>Report pollution</strong><small>Share a water pollution concern.</small><span class="card-arrow">↗</span></button>
+        <button class="action-card" data-go="learn"><span class="action-icon green">✿</span><strong>Learn & grow</strong><small>Explore easy ways to protect water.</small><span class="card-arrow">↗</span></button>
+      </section>
+
+      <section class="section-heading"><div><p class="eyebrow">COMMUNITY WATCH</p><h2>Recent reports</h2></div><button class="text-btn" data-go="profile">View all</button></section>
+      <div id="recentReports" class="report-list"><div class="empty-state"><span>🌊</span><strong>Your community starts here</strong><p>Submit a report to see it listed here.</p></div></div>
+
+      <section class="tip-banner"><span class="tip-bulb">✧</span><div><strong>Today's water-saving reminder</strong><p>Never pour paint, oil or strong chemicals into a drain. Dispose of them safely.</p></div><button data-go="learn" aria-label="Read more">→</button></section>
+    </main>
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button class="nav-item active" data-tab="home"><span>⌂</span>Home</button>
+      <button class="nav-item" data-tab="report"><span>＋</span>Report</button>
+      <button class="nav-item" data-tab="learn"><span>▤</span>Learn</button>
+      <button class="nav-item" data-tab="profile"><span>♙</span>Profile</button>
+    </nav>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
